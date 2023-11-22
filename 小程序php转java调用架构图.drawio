@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-11-22T10:46:27.568Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="HUFkYH-_lG6UAQ1Evvoo" version="22.1.3" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-22T10:46:50.249Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="jEK01TLLqJugzYHarTjb" version="22.1.3" type="github">
   <diagram name="第 1 页" id="WRQ-3XJAXvZbZma2N-Af">
-    <mxGraphModel dx="940" dy="490" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="940" dy="490" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -64,16 +64,16 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="-ezlP-mayX-OYDqypt-v-2" value="B端web请求" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="921" y="35" width="120" height="60" as="geometry" />
+          <mxGeometry x="648" y="45" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="-ezlP-mayX-OYDqypt-v-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="-ezlP-mayX-OYDqypt-v-4" target="-ezlP-mayX-OYDqypt-v-5">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="-ezlP-mayX-OYDqypt-v-4" value="php-nginx" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="921" y="135" width="120" height="60" as="geometry" />
+          <mxGeometry x="648" y="145" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="-ezlP-mayX-OYDqypt-v-5" value="php鉴权" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="921" y="265" width="120" height="60" as="geometry" />
+          <mxGeometry x="648" y="275" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="-ezlP-mayX-OYDqypt-v-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="-ezlP-mayX-OYDqypt-v-4" target="-ezlP-mayX-OYDqypt-v-15">
           <mxGeometry relative="1" as="geometry" />
@@ -92,40 +92,40 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="-ezlP-mayX-OYDqypt-v-8" value="session&lt;br&gt;&amp;nbsp;服务" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
-          <mxGeometry x="981" y="325" width="60" height="60" as="geometry" />
+          <mxGeometry x="708" y="335" width="60" height="60" as="geometry" />
         </mxCell>
         <mxCell id="-ezlP-mayX-OYDqypt-v-9" value="java服务接口" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
-          <mxGeometry x="1165" y="425" width="120" height="60" as="geometry" />
+          <mxGeometry x="892" y="435" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="-ezlP-mayX-OYDqypt-v-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="-ezlP-mayX-OYDqypt-v-11" target="-ezlP-mayX-OYDqypt-v-18">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="-ezlP-mayX-OYDqypt-v-11" value="正常业务" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="921" y="325" width="60" height="60" as="geometry" />
+          <mxGeometry x="648" y="335" width="60" height="60" as="geometry" />
         </mxCell>
         <mxCell id="-ezlP-mayX-OYDqypt-v-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-ezlP-mayX-OYDqypt-v-13" target="-ezlP-mayX-OYDqypt-v-15">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="-ezlP-mayX-OYDqypt-v-13" value="C端web请求" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1165" y="35" width="120" height="60" as="geometry" />
+          <mxGeometry x="892" y="45" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="-ezlP-mayX-OYDqypt-v-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="-ezlP-mayX-OYDqypt-v-15" target="-ezlP-mayX-OYDqypt-v-17">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="-ezlP-mayX-OYDqypt-v-15" value="java-nginx" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1165" y="135" width="120" height="60" as="geometry" />
+          <mxGeometry x="892" y="145" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="-ezlP-mayX-OYDqypt-v-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="-ezlP-mayX-OYDqypt-v-17" target="-ezlP-mayX-OYDqypt-v-9">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="-ezlP-mayX-OYDqypt-v-17" value="java鉴权&lt;br&gt;（重写php逻辑）&lt;br&gt;ls_session表" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1165" y="325" width="120" height="60" as="geometry" />
+          <mxGeometry x="892" y="335" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="-ezlP-mayX-OYDqypt-v-18" value="php业务" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="911" y="425" width="120" height="60" as="geometry" />
+          <mxGeometry x="638" y="435" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="-ezlP-mayX-OYDqypt-v-24" value="申请域名2" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#f40b0b;" vertex="1" parent="1">
-          <mxGeometry x="1062" y="371" width="73" height="26" as="geometry" />
+          <mxGeometry x="789" y="381" width="73" height="26" as="geometry" />
         </mxCell>
         <mxCell id="-ezlP-mayX-OYDqypt-v-25" value="申请域名1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#f00505;labelBackgroundColor=#E3DADA;" vertex="1" parent="1">
           <mxGeometry x="271" y="394" width="73" height="26" as="geometry" />
