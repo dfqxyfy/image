@@ -1,9 +1,75 @@
-<mxfile host="app.diagrams.net" modified="2024-05-13T02:41:33.667Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" version="24.0.4" etag="U91zezLn_UlDhTRARuen" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-13T03:13:46.408Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="S3aYRT4y4ii-c_gcPd8n" version="24.0.4" type="github">
   <diagram name="第 1 页" id="wkGMEy95KZ9ryC0OB72i">
-    <mxGraphModel>
+    <mxGraphModel dx="2594" dy="482" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="wxuyTiae2zJcQLSmIOwy-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="wxuyTiae2zJcQLSmIOwy-2" target="wxuyTiae2zJcQLSmIOwy-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wxuyTiae2zJcQLSmIOwy-2" value="&lt;div class=&quot;lake-content&quot;&gt;&lt;span class=&quot;ne-text&quot;&gt;ods_dd_common_src_di&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-580" y="320" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="wxuyTiae2zJcQLSmIOwy-3" value="以日志common_20240511.log为例" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-180" y="10" width="420" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wxuyTiae2zJcQLSmIOwy-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="wxuyTiae2zJcQLSmIOwy-5" target="wxuyTiae2zJcQLSmIOwy-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wxuyTiae2zJcQLSmIOwy-5" value="&lt;div class=&quot;lake-content&quot;&gt;&lt;span class=&quot;ne-text&quot;&gt;comm_202240511.log&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-580" y="130" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="wxuyTiae2zJcQLSmIOwy-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="wxuyTiae2zJcQLSmIOwy-7" target="wxuyTiae2zJcQLSmIOwy-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wxuyTiae2zJcQLSmIOwy-13" value="提前创建表&lt;div&gt;空格分隔符号&lt;/div&gt;&lt;div&gt;并写入特定目录&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="wxuyTiae2zJcQLSmIOwy-12">
+          <mxGeometry x="-0.1799" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wxuyTiae2zJcQLSmIOwy-7" value="&lt;div class=&quot;lake-content&quot;&gt;&lt;div class=&quot;lake-content&quot;&gt;&lt;span class=&quot;ne-text&quot;&gt;create  table ods_dd_common_src_2_di(hostname string,ts string,level string,content string) partitioned by (log_from string, day string) ROW FORMAT DELIMITED FIELDS TERMINATED BY &#39;&#x9;&#39;  LOCATION &#39;/user/hive/warehouse/mhub.db//ods/ods_dd_common_src_di/&#39;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-241" y="280" width="380" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="wxuyTiae2zJcQLSmIOwy-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="wxuyTiae2zJcQLSmIOwy-8" target="wxuyTiae2zJcQLSmIOwy-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wxuyTiae2zJcQLSmIOwy-11" value="日志格式" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="wxuyTiae2zJcQLSmIOwy-10">
+          <mxGeometry x="-0.4676" y="3" relative="1" as="geometry">
+            <mxPoint x="-25" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wxuyTiae2zJcQLSmIOwy-8" value="&lt;p style=&quot;margin: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-stretch: normal; line-height: normal; font-family: Menlo; text-align: start; font-size: 11px;&quot; class=&quot;p1&quot;&gt;&lt;span style=&quot;font-variant-ligatures: no-common-ligatures; background-color: initial;&quot;&gt;dd-api-0&lt;/span&gt;&lt;span style=&quot;font-variant-ligatures: no-common-ligatures; background-color: initial; white-space: pre;&quot; class=&quot;Apple-tab-span&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;font-variant-ligatures: no-common-ligatures; background-color: initial;&quot;&gt;2024-05-13 10:31:27&lt;/span&gt;&lt;span style=&quot;font-variant-ligatures: no-common-ligatures; background-color: initial; white-space: pre;&quot; class=&quot;Apple-tab-span&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;font-variant-ligatures: no-common-ligatures; background-color: initial;&quot;&gt;common&lt;/span&gt;&lt;span style=&quot;font-variant-ligatures: no-common-ligatures; background-color: initial; white-space: pre;&quot; class=&quot;Apple-tab-span&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;font-variant-ligatures: no-common-ligatures; background-color: initial;&quot;&gt;{&quot;evtType&quot;:&quot;page&quot;,&quot;evtName&quot;:&quot;login_page_pv&quot;,&quot;evtData&quot;&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-stretch: normal; line-height: normal; font-family: Menlo; text-align: start; font-size: 11px;&quot; class=&quot;p1&quot;&gt;&lt;span style=&quot;font-variant-ligatures: no-common-ligatures;&quot; class=&quot;s1&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;:&quot;{\&quot;env\&quot;:\&quot;dev\&quot;,\&quot;playerId\&quot;:\&quot;\&quot;,\&quot;gameVersion\&quot;:\&quot;2.241\&quot;,\&quot;timestampClient\&quot;:\&quot;2024-05-14 11:32&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-stretch: normal; line-height: normal; font-family: Menlo; text-align: start; font-size: 11px;&quot; class=&quot;p1&quot;&gt;&lt;span style=&quot;font-variant-ligatures: no-common-ligatures;&quot; class=&quot;s1&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;:24\&quot;}&quot;,&quot;ts_client&quot;:&quot;1715567483&quot;,&quot;ts_server&quot;:1715567487155}&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-241" y="110" width="720" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wxuyTiae2zJcQLSmIOwy-14" value="&lt;div class=&quot;lake-content&quot;&gt;&lt;span class=&quot;ne-text&quot;&gt;ods_dd_common_2_di&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-580" y="630" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="wxuyTiae2zJcQLSmIOwy-15" value="&lt;div class=&quot;lake-content&quot;&gt;&lt;span class=&quot;ne-text&quot;&gt;使用前提，使用mhub库&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;lake-content&quot;&gt;&lt;span class=&quot;ne-text&quot;&gt;use mhub;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-570" y="50" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="wxuyTiae2zJcQLSmIOwy-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wxuyTiae2zJcQLSmIOwy-16" target="wxuyTiae2zJcQLSmIOwy-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wxuyTiae2zJcQLSmIOwy-18" value="创建表" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="wxuyTiae2zJcQLSmIOwy-17">
+          <mxGeometry x="-0.1" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wxuyTiae2zJcQLSmIOwy-16" value="&lt;div class=&quot;lake-content&quot;&gt;&lt;div class=&quot;lake-content&quot;&gt;create&amp;nbsp; table ods_dd_common_2_di(evt_type string,evt_name string,evt_data string,ts_client string,ts_server string) partitioned by (log_from string, day string) ROW FORMAT DELIMITED FIELDS TERMINATED BY &#39;&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;&#39;&amp;nbsp; LOCATION &#39;/user/hive/warehouse/mhub.db//ods/ods_dd_common_di/&#39;&amp;nbsp; ;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-200" y="590" width="380" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="wxuyTiae2zJcQLSmIOwy-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="wxuyTiae2zJcQLSmIOwy-20" target="wxuyTiae2zJcQLSmIOwy-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wxuyTiae2zJcQLSmIOwy-20" value="LOAD DATA LOCAL INPATH &#39;/nas/nas-a3e8541e-0f01-4737-b5e5-0609cd283dea/track/common/common_20240511.log&#39; OVERWRITE INTO TABLE ods_dd_common_src_2_di PARTITION(log_from=&#39;common&#39;, day=&#39;2024-05-11&#39;);" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-705" y="220" width="450" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="wxuyTiae2zJcQLSmIOwy-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wxuyTiae2zJcQLSmIOwy-22" target="wxuyTiae2zJcQLSmIOwy-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wxuyTiae2zJcQLSmIOwy-22" value="INSERT OVERWRITE TABLE ods_dd_common_2_di PARTITION (log_from, day) select get_json_object(`content`,&#39;$.evtType&#39;) as evt_type , get_json_object(`content`,&#39;$.evtName&#39; ) as evt_name, get_json_object(`content`,&#39;$.evtData&#39; ) as evt_data, get_json_object(`content`,&#39;$.ts_client&#39; ) as ts_client, get_json_object(`content`,&#39;$.ts_server&#39; ) as ts_server, log_from ,day from mhub.ods_dd_common_src_2_di where ValidDateUDF(ts_client,today)) &amp;gt; 0" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-842.5" y="435" width="725" height="125" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
