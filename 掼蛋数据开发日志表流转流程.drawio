@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-05-13T09:16:48.286Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="VCbVkOgqVBWeYWJA6AWW" version="24.0.4" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-14T08:16:47.503Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="pyz_CJ5uGGv80-8GBVr7" version="24.0.4" type="github">
   <diagram name="第 1 页" id="wkGMEy95KZ9ryC0OB72i">
     <mxGraphModel dx="2594" dy="482" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -67,7 +67,7 @@
         <mxCell id="wxuyTiae2zJcQLSmIOwy-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wxuyTiae2zJcQLSmIOwy-22" target="wxuyTiae2zJcQLSmIOwy-14">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="wxuyTiae2zJcQLSmIOwy-22" value="INSERT OVERWRITE TABLE ods_dd_common_2_di PARTITION (log_from, day) select get_json_object(`content`,&#39;$.evtType&#39;) as evt_type , get_json_object(`content`,&#39;$.evtName&#39; ) as evt_name, get_json_object(`content`,&#39;$.evtData&#39; ) as evt_data, get_json_object(`content`,&#39;$.ts_client&#39; ) as ts_client, get_json_object(`content`,&#39;$.ts_server&#39; ) as ts_server, log_from ,day from mhub.ods_dd_common_src_2_di where ValidDateUDF(ts_client,today)) &amp;gt; 0" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="wxuyTiae2zJcQLSmIOwy-22" value="INSERT OVERWRITE TABLE ods_dd_common_2_di PARTITION (log_from, day) select get_json_object(`content`,&#39;$.evtType&#39;) as evt_type , get_json_object(`content`,&#39;$.evtName&#39; ) as evt_name, get_json_object(`content`,&#39;$.evtData&#39; ) as evt_data, get_json_object(`content`,&#39;$.ts_client&#39; ) as ts_client, get_json_object(`content`,&#39;$.ts_server&#39; ) as ts_server, log_from ,day from mhub.ods_dd_common_src_2_di where ValidDateUDF(ts_client,today) &amp;gt; 0" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-842.5" y="435" width="725" height="125" as="geometry" />
         </mxCell>
       </root>
